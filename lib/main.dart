@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flex_color_scheme/flex_color_scheme.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,9 +12,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        textTheme: GoogleFonts.poppinsTextTheme(),
+      theme: FlexThemeData.light(
+        scheme: FlexScheme.aquaBlue,
+        //textTheme: GoogleFonts.poppinsTextTheme()
       ),
+      // The Mandy red, dark theme.
+      darkTheme: FlexThemeData.dark(scheme: FlexScheme.aquaBlue),
+      // Use dark or light theme based on system setting.
+      //themeMode: ThemeMode.system,
       home: Scaffold(
         appBar: AppBar(),
         body: const MyStatefulWidget(),
