@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+//import 'package:google_fonts/google_fonts.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 
 void main() => runApp(const MyApp());
@@ -16,10 +16,10 @@ class MyApp extends StatelessWidget {
         scheme: FlexScheme.aquaBlue,
         //textTheme: GoogleFonts.poppinsTextTheme()
       ),
-      // The Mandy red, dark theme.
-      //darkTheme: FlexThemeData.dark(scheme: FlexScheme.aquaBlue),
-      // Use dark or light theme based on system setting.
-      //themeMode: ThemeMode.system,
+      /*The Mandy red, dark theme.
+      darkTheme: FlexThemeData.dark(scheme: FlexScheme.aquaBlue),
+      Use dark or light theme based on system setting.
+      themeMode: ThemeMode.system,*/
       home: Scaffold(
         appBar: AppBar(),
         body: const MyStatefulWidget(),
@@ -38,6 +38,9 @@ class MyStatefulWidget extends StatefulWidget {
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   TextEditingController nameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+
+  // Initially password is obscure
+  bool _isObscure = true;
 
   @override
   Widget build(BuildContext context) {
@@ -71,11 +74,21 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             Container(
               padding: const EdgeInsets.fromLTRB(10, 10, 10, 20),
               child: TextField(
-                obscureText: true,
+                obscureText: _isObscure,
                 controller: passwordController,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
+                decoration: InputDecoration(
+                  border: const OutlineInputBorder(),
                   labelText: 'Password',
+                  suffixIcon: IconButton(
+                    icon: Icon(
+                      _isObscure ? Icons.visibility : Icons.visibility_off,
+                    ),
+                    onPressed: () {
+                      setState(() {
+                        _isObscure = !_isObscure;
+                      });
+                    },
+                  ),
                 ),
               ),
             ),
@@ -98,6 +111,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                   },
                 )),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 const Text('Does not have account?'),
                 TextButton(
@@ -110,7 +124,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                   },
                 )
               ],
-              mainAxisAlignment: MainAxisAlignment.center,
             ),
           ],
         ));
