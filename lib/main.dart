@@ -40,15 +40,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         child: ListView(
           children: <Widget>[
             Container(
-                alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
                 child: const Text(
-                  'Welcome back!',
-                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 30),
+                  'Welcome back 👋!',
+                  style: TextStyle(fontWeight: FontWeight.w700, fontSize: 35),
                 )),
             Container(
                 alignment: Alignment.center,
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(30),
                 child: const Text(
                   'Sign in',
                   style: TextStyle(fontSize: 20),
