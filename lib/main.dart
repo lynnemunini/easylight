@@ -63,7 +63,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+              padding: const EdgeInsets.fromLTRB(10, 10, 10, 20),
               child: TextField(
                 obscureText: true,
                 controller: passwordController,
@@ -78,12 +78,12 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 //forgot password screen
               },
               child: const Text(
-                'Forgot Password',
+                'Forgot Password?',
               ),
             ),
             Container(
-                height: 50,
-                padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                height: 70,
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
                 child: ElevatedButton(
                   child: const Text('Login'),
                   onPressed: () {
@@ -97,7 +97,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 TextButton(
                   child: const Text(
                     'Register',
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 14),
                   ),
                   onPressed: () {
                     //signup screen
