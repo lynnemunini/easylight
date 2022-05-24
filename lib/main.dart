@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         //textTheme: GoogleFonts.poppinsTextTheme()
       ),
       // The Mandy red, dark theme.
-      darkTheme: FlexThemeData.dark(scheme: FlexScheme.aquaBlue),
+      //darkTheme: FlexThemeData.dark(scheme: FlexScheme.aquaBlue),
       // Use dark or light theme based on system setting.
       //themeMode: ThemeMode.system,
       home: Scaffold(
