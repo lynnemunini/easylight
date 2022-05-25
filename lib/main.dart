@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/routes.dart';
-//import 'package:shop_shop_app/screens/profile/profile_screen.dart';
+import 'package:token_app/routes.dart';
+//import 'package:shop_token_app/screens/profile/profile_screen.dart';
 import 'screens/sign_up/sign_up_screen.dart';
-import 'package:shop_app/theme.dart';
+import 'package:token_app/theme.dart';
 
 void main() {
   runApp(MyApp());
