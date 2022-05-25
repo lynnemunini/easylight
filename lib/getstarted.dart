@@ -38,12 +38,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             Image.asset(
               'assets/images/thumbs-up.png',
             ),
-            Container(
-                padding: const EdgeInsets.all(10),
-                child: const Text(
-                  'Welcome to the pre-paid tokens service application',
-                  style: TextStyle(fontWeight: FontWeight.w700, fontSize: 25),
-                )),
+            const Text(
+              'Welcome to the pre-paid tokens service application',
+              style: TextStyle(fontWeight: FontWeight.w700, fontSize: 25),
+            ),
+            const Text(
+              'A simple and convenient way to purchase tokens and automatically get your lights back, monitor your energy usage and get notified when your tokens are about to deplete',
+              style: TextStyle(fontSize: 12),
+            ),
             Container(
                 height: 80,
                 padding: const EdgeInsets.fromLTRB(200, 10, 10, 10),
