@@ -64,7 +64,12 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                     'Get Started',
                     style: TextStyle(fontSize: 18),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    /*Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SecondPage()),
+                    );*/
+                  },
                 )),
           ],
         ));
