@@ -16,12 +16,9 @@ class MyApp extends StatelessWidget {
         scheme: FlexScheme.aquaBlue,
         //textTheme: GoogleFonts.poppinsTextTheme()
       ),
-      /*The Mandy red, dark theme.
-      darkTheme: FlexThemeData.dark(scheme: FlexScheme.aquaBlue),
-      Use dark or light theme based on system setting.
-      themeMode: ThemeMode.system,*/
+      // ignore: prefer_const_constructors
       home: Scaffold(
-        appBar: AppBar(),
+        //appBar: AppBar(),
         body: const MyStatefulWidget(),
       ),
     );

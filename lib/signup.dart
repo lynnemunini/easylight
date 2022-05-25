@@ -20,8 +20,9 @@ class MyApp extends StatelessWidget {
       darkTheme: FlexThemeData.dark(scheme: FlexScheme.aquaBlue),
       Use dark or light theme based on system setting.
       themeMode: ThemeMode.system,*/
+      // ignore: prefer_const_constructors
       home: Scaffold(
-        appBar: AppBar(),
+        // appBar: AppBar(),
         body: const MyStatefulWidget(),
       ),
     );
