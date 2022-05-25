@@ -17,8 +17,8 @@ class HomeHeader extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           IconBtnWithCounter(
-            svgSrc: "assets/icons/Bell.svg",
-            numOfitem: 3,
+            svgSrc: "assets/icons/menu.svg",
+            numOfitem: 4,
             press: () {},
           ),
         ],
