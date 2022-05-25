@@ -36,16 +36,21 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         child: ListView(
           children: <Widget>[
             Image.asset(
-              'assets/images/thumbs-up.png',
+              'assets/images/customer.png',
             ),
             const Text(
               'Welcome to the pre-paid tokens service application',
-              style: TextStyle(fontWeight: FontWeight.w700, fontSize: 25),
+              style: TextStyle(fontWeight: FontWeight.w700, fontSize: 22),
             ),
+
+            // Add spacing
+
+            const SizedBox(height: 20),
             const Text(
               'A simple and convenient way to purchase tokens and automatically get your lights back, monitor your energy usage and get notified when your tokens are about to deplete',
-              style: TextStyle(fontSize: 12),
+              style: TextStyle(fontSize: 14),
             ),
+            const SizedBox(height: 20),
             Container(
                 height: 80,
                 padding: const EdgeInsets.fromLTRB(200, 10, 10, 10),
