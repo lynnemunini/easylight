@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:token_app/size_config.dart';
 
-const kPrimaryColor = Color.fromARGB(255, 91, 170, 27);
+const kPrimaryColor = Color(0xFF14C38E);
 const kPrimaryLightColor = Color(0xFFFFECDF);
 const kPrimaryGradientColor = LinearGradient(
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
-  colors: [Color(0xFFFFA53E), Color(0xFFFF7643)],
+  colors: [Color(0xFFB8F1B0), Color(0xFF00FFAB)],
 );
 const kSecondaryColor = Color(0xFF979797);
 const kTextColor = Color(0xFF757575);
