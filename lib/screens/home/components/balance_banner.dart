@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
+import '../../../constants.dart';
 
 class DiscountBanner extends StatelessWidget {
   const DiscountBanner({
@@ -18,7 +19,7 @@ class DiscountBanner extends StatelessWidget {
         vertical: getProportionateScreenWidth(15),
       ),
       decoration: BoxDecoration(
-        color: Color(0xFF14C38E),
+        gradient: kPrimaryGradientColor,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Text.rich(
