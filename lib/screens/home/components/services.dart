@@ -8,8 +8,8 @@ class Services extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Map<String, dynamic>> services = [
       {"icon": "assets/icons/Chat bubble Icon.svg", "text": "Messages"},
-      {"icon": "assets/icons/Settings.svg", "text": "Services"},
-      {"icon": "assets/icons/Question mark.svg", "text": "Help Center"},
+      {"icon": "assets/icons/services.svg", "text": "Services"},
+      {"icon": "assets/icons/help.svg", "text": "Help Center"},
     ];
 
     return Padding(
@@ -57,7 +57,10 @@ class ServiceCard extends StatelessWidget {
                 color: Color(0xFFE3FCBF),
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: SvgPicture.asset(icon!),
+              child: SvgPicture.asset(
+                icon!,
+                color: Color(0xFF00FFAB),
+              ),
             ),
             SizedBox(height: 5),
             Text(text!, textAlign: TextAlign.center)

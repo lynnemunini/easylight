@@ -29,7 +29,7 @@ class Body extends StatelessWidget {
           ),
           ProfileMenu(
             text: "Help Center",
-            icon: "assets/icons/Question mark.svg",
+            icon: "assets/icons/help.svg",
             press: () {},
           ),
           ProfileMenu(
