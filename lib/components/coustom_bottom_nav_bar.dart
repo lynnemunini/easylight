@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:token_app/screens/home/home_screen.dart';
 import 'package:token_app/screens/profile/profile_screen.dart';
+import 'package:token_app/screens/home/components/icon_btn_with_counter.dart';
 
 import '../constants.dart';
 import '../enums.dart';
@@ -40,16 +40,6 @@ class CustomBottomNavBar extends StatelessWidget {
             children: [
               IconButton(
                 icon: SvgPicture.asset(
-                  "assets/icons/Shop Icon.svg",
-                  color: MenuState.home == selectedMenu
-                      ? kPrimaryColor
-                      : inActiveIconColor,
-                ),
-                onPressed: () =>
-                    Navigator.pushNamed(context, HomeScreen.routeName),
-              ),
-              IconButton(
-                icon: SvgPicture.asset(
                   "assets/icons/home.svg",
                   color: MenuState.profile == selectedMenu
                       ? kPrimaryColor
@@ -58,25 +48,12 @@ class CustomBottomNavBar extends StatelessWidget {
                 onPressed: () =>
                     Navigator.pushNamed(context, ProfileScreen.routeName),
               ),
-              IconButton(
-                icon: SvgPicture.asset(
-                  "assets/icons/phone.svg",
-                  color: MenuState.profile == selectedMenu
-                      ? kPrimaryColor
-                      : inActiveIconColor,
-                ),
-                onPressed: () =>
-                    Navigator.pushNamed(context, ProfileScreen.routeName),
-              ),
-              IconButton(
-                icon: SvgPicture.asset(
-                  "assets/icons/Bell.svg",
-                  color: MenuState.profile == selectedMenu
-                      ? kPrimaryColor
-                      : inActiveIconColor,
-                ),
-                onPressed: () =>
-                    Navigator.pushNamed(context, ProfileScreen.routeName),
+              IconBtnWithCounter(
+                svgSrc: "assets/icons/Bell.svg",
+                numOfitem: 4,
+                press: () {
+                  Navigator.pushNamed(context, ProfileScreen.routeName);
+                },
               ),
               IconButton(
                 icon: SvgPicture.asset(

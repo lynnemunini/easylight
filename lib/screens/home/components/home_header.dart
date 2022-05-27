@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
-import 'icon_btn_with_counter.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({
@@ -15,13 +14,7 @@ class HomeHeader extends StatelessWidget {
           EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          IconBtnWithCounter(
-            svgSrc: "assets/icons/menu.svg",
-            numOfitem: 4,
-            press: () {},
-          ),
-        ],
+        children: [],
       ),
     );
   }
