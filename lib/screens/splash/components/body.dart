@@ -17,7 +17,7 @@ class _BodyState extends State<Body> {
   List<Map<String, String>> splashData = [
     {
       "text": "Welcome to the pre-paid tokens service application!",
-      "image": "assets/images/splash_1.png"
+      "image": "assets/images/welcome.png"
     },
     {
       "text":
