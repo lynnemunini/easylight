@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../size_config.dart';
+import '../../../constants.dart';
 
 class Services extends StatelessWidget {
   @override
@@ -59,7 +60,7 @@ class ServiceCard extends StatelessWidget {
               ),
               child: SvgPicture.asset(
                 icon!,
-                color: Color(0xFF00FFAB),
+                color: kPrimaryColor,
               ),
             ),
             SizedBox(height: 5),
