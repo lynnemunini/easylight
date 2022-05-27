@@ -11,7 +11,7 @@ class Categories extends StatelessWidget {
       {"icon": "assets/icons/stat.svg", "text": "Usage"},
       {"icon": "assets/icons/Bill Icon.svg", "text": "Statement"},
       //{"icon": "assets/icons/Game Icon.svg", "text": "Game"},
-      {"icon": "assets/icons/Chat bubble Icon.svg", "text": "Messages"},
+      {"icon": "assets/icons/top-up.svg", "text": "Top-Up"},
     ];
 
     return Padding(
