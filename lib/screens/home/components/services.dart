@@ -46,13 +46,13 @@ class ServiceCard extends StatelessWidget {
     return GestureDetector(
       onTap: press,
       child: SizedBox(
-        width: getProportionateScreenWidth(55),
+        width: getProportionateScreenWidth(90),
         child: Column(
           children: [
             Container(
               padding: EdgeInsets.all(getProportionateScreenWidth(15)),
-              height: getProportionateScreenWidth(55),
-              width: getProportionateScreenWidth(55),
+              height: getProportionateScreenWidth(80),
+              width: getProportionateScreenWidth(80),
               decoration: BoxDecoration(
                 color: Color(0xFFE3FCBF),
                 borderRadius: BorderRadius.circular(10),
