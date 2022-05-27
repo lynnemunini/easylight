@@ -3,14 +3,13 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../size_config.dart';
 
-class Categories extends StatelessWidget {
+class Services extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    List<Map<String, dynamic>> categories = [
-      {"icon": "assets/icons/Flash Icon.svg", "text": "Usage"},
-      {"icon": "assets/icons/Bill Icon.svg", "text": "Statement"},
-      //{"icon": "assets/icons/Game Icon.svg", "text": "Game"},
+    List<Map<String, dynamic>> services = [
       {"icon": "assets/icons/Chat bubble Icon.svg", "text": "Messages"},
+      {"icon": "assets/icons/Settings.svg", "text": "Services"},
+      {"icon": "assets/icons/Question mark.svg", "text": "Help Center"},
     ];
 
     return Padding(
@@ -19,10 +18,10 @@ class Categories extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: List.generate(
-          categories.length,
-          (index) => CategoryCard(
-            icon: categories[index]["icon"],
-            text: categories[index]["text"],
+          services.length,
+          (index) => ServiceCard(
+            icon: services[index]["icon"],
+            text: services[index]["text"],
             press: () {},
           ),
         ),
@@ -31,8 +30,8 @@ class Categories extends StatelessWidget {
   }
 }
 
-class CategoryCard extends StatelessWidget {
-  const CategoryCard({
+class ServiceCard extends StatelessWidget {
+  const ServiceCard({
     Key? key,
     required this.icon,
     required this.text,

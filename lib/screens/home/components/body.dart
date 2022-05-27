@@ -4,6 +4,7 @@ import '../../../size_config.dart';
 import 'categories.dart';
 import 'balance_banner.dart';
 import 'home_header.dart';
+import 'services.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -18,6 +19,7 @@ class Body extends StatelessWidget {
             DiscountBanner(),
             Categories(),
             SizedBox(height: getProportionateScreenWidth(30)),
+            Services(),
             SizedBox(height: getProportionateScreenWidth(30)),
           ],
         ),
