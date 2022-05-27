@@ -54,7 +54,7 @@ class ServiceCard extends StatelessWidget {
               height: getProportionateScreenWidth(60),
               width: getProportionateScreenWidth(60),
               decoration: BoxDecoration(
-                color: Color(0xFFE3FCBF),
+                color: Color(0xFFE3FCBF).withOpacity(0.5),
                 borderRadius: BorderRadius.circular(10),
               ),
               child: SvgPicture.asset(

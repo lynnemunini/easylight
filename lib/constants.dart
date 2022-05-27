@@ -7,21 +7,21 @@ const kPrimaryGradientColor = LinearGradient(
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
   colors: [
-    Color(0xFF14c38e),
-    Color(0xFF0fce94),
-    Color(0xFF08d999),
-    Color(0xFF03e59f),
-    Color(0xFF00f0a4),
-    Color(0xFF38f4a5),
-    Color(0xFF51f8a6),
-    Color(0XFF64fca8),
-    Color(0XFF81f9a8),
-    Color(0XFF97f7a9),
-    Color(0XFFa9f4ac),
-    Color(0XFFb8f1b0)
+    Color(0xFF006a71),
+    Color(0xFF007b7c),
+    Color(0xFF008b85),
+    Color(0xFF009c8b),
+    Color(0xFF00ad8e),
+    Color(0xFF00b992),
+    Color(0xFF0dd296),
+    Color(0xFF07dd9c),
+    Color(0xFF02e8a1),
+    Color(0xFF00f4a6),
+    Color(0xFF00ffab),
+    Color(0XFFe3fcbf)
   ],
 );
-//background-image: linear-gradient(to right top, #14c38e, #0fce94, #08d999, #03e59f, #00f0a4, #38f4a5, #51f8a6, #64fca8, #81f9a8, #97f7a9, #a9f4ac, #b8f1b0);
+//background-image: linear-gradient(to right top, #006a71, #007b7c, #008b85, #009c8b, #00ad8e, #00b992, #00c694, #0dd296, #07dd9c, #02e8a1, #00f4a6, #00ffab);
 const kSecondaryColor = Color(0xFF979797);
 const kTextColor = Color(0xFF757575);
 
