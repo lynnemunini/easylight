@@ -5,6 +5,7 @@ import 'categories.dart';
 import 'balance_banner.dart';
 import 'home_header.dart';
 import 'services.dart';
+import 'transactions.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -21,6 +22,7 @@ class Body extends StatelessWidget {
             SizedBox(height: getProportionateScreenWidth(10)),
             Services(),
             SizedBox(height: getProportionateScreenWidth(30)),
+            Transactions(),
           ],
         ),
       ),
