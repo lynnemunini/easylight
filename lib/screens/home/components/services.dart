@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../size_config.dart';
-//import '../../../constants.dart';
+import '../../../constants.dart';
 
 class Services extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Map<String, dynamic>> services = [
-      {"icon": "assets/icons/Chat bubble Icon.svg", "text": "Messages"},
-      {"icon": "assets/icons/services.svg", "text": "Services"},
-      {"icon": "assets/icons/help.svg", "text": "Help Center"},
+      {"icon": "assets/icons/message.png", "text": "Messages"},
+      {"icon": "assets/icons/services.png", "text": "Services"},
+      {"icon": "assets/icons/help.png", "text": "Help Center"},
     ];
 
     return Padding(
@@ -51,14 +51,14 @@ class ServiceCard extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.all(getProportionateScreenWidth(20)),
+              padding: EdgeInsets.all(getProportionateScreenWidth(15)),
               height: getProportionateScreenWidth(65),
               width: getProportionateScreenWidth(65),
               decoration: BoxDecoration(
-                color: Color(0xFFE3FCBF).withOpacity(0.2),
+                color: kSecondaryColor.withOpacity(0.05),
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: SvgPicture.asset(
+              child: Image.asset(
                 icon!,
                 color: Color(0xFF125B50),
               ),
