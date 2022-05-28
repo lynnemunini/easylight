@@ -42,12 +42,11 @@ class CustomBottomNavBar extends StatelessWidget {
               IconButton(
                 icon: SvgPicture.asset(
                   "assets/icons/home.svg",
-                  color: MenuState.profile == selectedMenu
-                      ? kPrimaryColor
-                      : inActiveIconColor,
+                  color: kPrimaryColor,
                 ),
-                onPressed: () =>
-                    Navigator.pushNamed(context, ProfileScreen.routeName),
+                onPressed: () {
+                  //Navigator.pushNamed(context, ProfileScreen.routeName);
+                },
               ),
               IconBtnWithCounter(
                 svgSrc: "assets/icons/Bell.svg",
