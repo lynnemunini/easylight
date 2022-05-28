@@ -54,6 +54,7 @@ class CustomBottomNavBar extends StatelessWidget {
                 press: () {
                   Navigator.pushNamed(context, ProfileScreen.routeName);
                 },
+                selectedMenu: selectedMenu,
               ),
               IconButton(
                 icon: SvgPicture.asset(

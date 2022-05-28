@@ -3,11 +3,13 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';
+import '../../../enums.dart';
 
 class IconBtnWithCounter extends StatelessWidget {
   const IconBtnWithCounter({
     Key? key,
     required this.svgSrc,
+    required this.selectedMenu,
     this.numOfitem = 0,
     required this.press,
   }) : super(key: key);
@@ -15,9 +17,11 @@ class IconBtnWithCounter extends StatelessWidget {
   final String svgSrc;
   final int numOfitem;
   final GestureTapCallback press;
+  final MenuState selectedMenu;
 
   @override
   Widget build(BuildContext context) {
+    final Color inActiveIconColor = Color(0xFFB6B6B6);
     return InkWell(
       borderRadius: BorderRadius.circular(100),
       onTap: press,
@@ -29,10 +33,15 @@ class IconBtnWithCounter extends StatelessWidget {
             height: getProportionateScreenWidth(46),
             width: getProportionateScreenWidth(46),
             decoration: BoxDecoration(
-              color: kSecondaryColor.withOpacity(0.1),
+              //color: kSecondaryColor.withOpacity(0.1),
               shape: BoxShape.circle,
             ),
-            child: SvgPicture.asset(svgSrc),
+            child: SvgPicture.asset(
+              svgSrc,
+              color: MenuState.profile == selectedMenu
+                  ? kPrimaryColor
+                  : inActiveIconColor,
+            ),
           ),
           if (numOfitem != 0)
             Positioned(
