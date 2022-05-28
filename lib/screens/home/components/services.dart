@@ -51,9 +51,9 @@ class ServiceCard extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.all(getProportionateScreenWidth(15)),
-              height: getProportionateScreenWidth(60),
-              width: getProportionateScreenWidth(60),
+              padding: EdgeInsets.all(getProportionateScreenWidth(20)),
+              height: getProportionateScreenWidth(65),
+              width: getProportionateScreenWidth(65),
               decoration: BoxDecoration(
                 color: Color(0xFFE3FCBF).withOpacity(0.5),
                 borderRadius: BorderRadius.circular(10),
@@ -63,7 +63,7 @@ class ServiceCard extends StatelessWidget {
                 color: kPrimaryColor,
               ),
             ),
-            SizedBox(height: 5),
+            //SizedBox(height: 5),
             Text(text!, textAlign: TextAlign.center)
           ],
         ),

@@ -6,12 +6,8 @@ class transaction_card extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<String> amount = <String>[
-      'Amt Ksh: 100.00',
-    ];
-    final List<String> units = <String>[
-      "Units: 6.27",
-    ];
+    final List<String> amount = <String>['Amt Ksh: 100.00', 'Amt Ksh: 500.00'];
+    final List<String> units = <String>["Units: 6.27", "Units: 29.75"];
 
     return ListView.separated(
       shrinkWrap: true,

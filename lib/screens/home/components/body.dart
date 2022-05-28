@@ -17,11 +17,11 @@ class Body extends StatelessWidget {
           children: [
             SizedBox(height: getProportionateScreenHeight(10)),
             HomeHeader(),
-            SizedBox(height: getProportionateScreenWidth(10)),
+            //SizedBox(height: getProportionateScreenWidth(10)),
             DiscountBanner(),
             Categories(),
             Services(),
-            SizedBox(height: getProportionateScreenWidth(20)),
+            SizedBox(height: getProportionateScreenWidth(5)),
             Transactions(),
             transaction_card(),
           ],
