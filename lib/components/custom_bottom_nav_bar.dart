@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:token_app/screens/profile/profile_screen.dart';
 import 'package:token_app/screens/home/components/icon_btn_with_counter.dart';
-import '../size_config.dart';
+//import '../size_config.dart';
 
 import '../constants.dart';
 import '../enums.dart';
