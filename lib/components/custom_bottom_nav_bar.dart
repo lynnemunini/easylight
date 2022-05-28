@@ -52,7 +52,7 @@ class CustomBottomNavBar extends StatelessWidget {
                 svgSrc: "assets/icons/Bell.svg",
                 numOfitem: 4,
                 press: () {
-                  Navigator.pushNamed(context, ProfileScreen.routeName);
+                  //Navigator.pushNamed(context, ProfileScreen.routeName);
                 },
                 selectedMenu: selectedMenu,
               ),
@@ -63,8 +63,9 @@ class CustomBottomNavBar extends StatelessWidget {
                       ? kPrimaryColor
                       : inActiveIconColor,
                 ),
-                onPressed: () =>
-                    Navigator.pushNamed(context, ProfileScreen.routeName),
+                onPressed: () {
+                  //Navigator.pushNamed(context, ProfileScreen.routeName);
+                },
               ),
             ],
           )),
