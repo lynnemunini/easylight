@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:token_app/screens/profile/profile_screen.dart';
 import 'package:token_app/screens/home/components/icon_btn_with_counter.dart';
+import '../size_config.dart';
 
 import '../constants.dart';
 import '../enums.dart';
@@ -18,7 +19,7 @@ class CustomBottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final Color inActiveIconColor = Color(0xFFB6B6B6);
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 14),
+      //padding: EdgeInsets.symmetric(vertical: 2),
       decoration: BoxDecoration(
         color: Colors.white,
         boxShadow: [
@@ -29,8 +30,8 @@ class CustomBottomNavBar extends StatelessWidget {
           ),
         ],
         borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(40),
-          topRight: Radius.circular(40),
+          topLeft: Radius.circular(10),
+          topRight: Radius.circular(10),
         ),
       ),
       child: SafeArea(
