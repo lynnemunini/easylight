@@ -38,7 +38,7 @@ class _BodyState extends State<Body> {
         child: Column(
           children: <Widget>[
             Expanded(
-              flex: 3,
+              flex: 4,
               child: PageView.builder(
                 onPageChanged: (value) {
                   setState(() {
@@ -59,7 +59,7 @@ class _BodyState extends State<Body> {
                     horizontal: getProportionateScreenWidth(20)),
                 child: Column(
                   children: <Widget>[
-                    Spacer(),
+                    Spacer(flex: 7),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: List.generate(
@@ -67,7 +67,7 @@ class _BodyState extends State<Body> {
                         (index) => buildDot(index: index),
                       ),
                     ),
-                    Spacer(flex: 5),
+                    Spacer(flex: 2),
                     DefaultButton(
                       text: "Get Started",
                       press: () {
