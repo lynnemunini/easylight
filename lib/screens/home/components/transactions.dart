@@ -10,21 +10,9 @@ class Transactions extends StatelessWidget {
         Padding(
           padding:
               EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
-          child: SectionTitle(title: "Recent Transactions", press: () {}),
+          child: SectionTitle(title: "Recent Payments", press: () {}),
         ),
         SizedBox(height: getProportionateScreenWidth(20)),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Column(
-            children: [
-              //  ...List.generate(
-              //Transactions
-              // ),
-
-              SizedBox(width: getProportionateScreenWidth(20)),
-            ],
-          ),
-        )
       ],
     );
   }

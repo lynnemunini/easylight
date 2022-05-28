@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
+import '../../../constants.dart';
 
 class transaction_card extends StatelessWidget {
   const transaction_card({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final List<String> phoneNumber = <String>[
-      '6666677897',
-      '7777777777',
+    final List<String> amount = <String>[
+      'Amt Ksh: 100.00',
     ];
-    final List<String> callType = <String>[
-      "Incoming",
-      "Outgoing",
+    final List<String> units = <String>[
+      "Units: 6.27",
     ];
 
     return ListView.separated(
       shrinkWrap: true,
       padding: const EdgeInsets.all(8),
-      itemCount: phoneNumber.length,
+      itemCount: amount.length,
       itemBuilder: (BuildContext context, int index) {
         return Card(
           color: Colors.white,
@@ -27,27 +26,13 @@ class transaction_card extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               ListTile(
-                leading: Icon(Icons.call),
-                title: Text("${phoneNumber[index]}",
-                    style: TextStyle(color: Colors.green)),
+                leading: Image.asset("assets/icons/payment.png"),
+                title: Text("${amount[index]}\n",
+                    style: TextStyle(color: Colors.black, fontSize: 16)),
                 subtitle: Text(
-                  "${callType[index]}",
-                  style: TextStyle(color: Colors.orangeAccent),
+                  "${units[index]}",
+                  style: TextStyle(color: kSecondaryColor),
                 ),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: <Widget>[
-                  TextButton(
-                    child: const Text('Dail'),
-                    onPressed: () {/* ... */},
-                  ),
-                  const SizedBox(width: 8),
-                  TextButton(
-                    child: const Text('Call History'),
-                    onPressed: () {/* ... */},
-                  ),
-                ],
               ),
             ],
           ),
