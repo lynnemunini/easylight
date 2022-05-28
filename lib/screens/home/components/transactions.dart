@@ -20,6 +20,7 @@ class Transactions extends StatelessWidget {
               //  ...List.generate(
               //Transactions
               // ),
+
               SizedBox(width: getProportionateScreenWidth(20)),
             ],
           ),
