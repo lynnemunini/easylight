@@ -19,6 +19,9 @@ class transaction_card extends StatelessWidget {
       itemCount: amount.length,
       itemBuilder: (BuildContext context, int index) {
         return Card(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15.0),
+          ),
           color: Colors.white,
           borderOnForeground: true,
           elevation: 10,
