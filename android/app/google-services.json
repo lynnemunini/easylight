@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "460514420505",
+    "firebase_url": "https://tokens-lynne-default-rtdb.firebaseio.com",
+    "project_id": "tokens-lynne",
+    "storage_bucket": "tokens-lynne.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460514420505:android:b85e3ef0ed69aed3ef8788",
+        "android_client_info": {
+          "package_name": "com.example.login_screen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460514420505-eflhkrpe1urovaloc9vk6qd41f94psdf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiYjiSY9RUpSjqAl9PlVM4HQuEk_pNNsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460514420505-eflhkrpe1urovaloc9vk6qd41f94psdf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
