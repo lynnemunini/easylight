@@ -8,7 +8,7 @@ class Services extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Map<String, dynamic>> services = [
-      {"icon": "assets/icons/message.png", "text": "Messages"},
+      {"icon": "assets/icons/all-inclusive.png", "text": "Your Accounts"},
       {"icon": "assets/icons/services.png", "text": "Services"},
       {"icon": "assets/icons/help.png", "text": "Help Center"},
     ];

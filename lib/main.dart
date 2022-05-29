@@ -5,9 +5,10 @@ import 'package:token_app/theme.dart';
 
 //Import firebase core
 import 'package:firebase_core/firebase_core.dart';
-
 //Import real time database package
 import 'package:firebase_database/firebase_database.dart';
+//Import Firebase Auth
+import 'package:firebase_auth/firebase_auth.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
