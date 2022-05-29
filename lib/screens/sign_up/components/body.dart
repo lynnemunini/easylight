@@ -19,12 +19,12 @@ class Body extends StatelessWidget {
               children: [
                 //SizedBox(height: SizeConfig.screenHeight * 0.01), // 4%
                 Text("Register Account", style: headingStyle),
-                const SizedBox(height: 10),
+                const SizedBox(height: 15),
                 Text(
                   "Complete your details",
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(height: SizeConfig.screenHeight * 0.02),
+                SizedBox(height: SizeConfig.screenHeight * 0.03),
                 SignUpForm(),
                 SizedBox(height: SizeConfig.screenHeight * 0.02),
 
