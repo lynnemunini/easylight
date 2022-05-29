@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:token_app/components/socal_card.dart';
+import 'package:token_app/components/no_account_text.dart';
 import 'package:token_app/constants.dart';
 import 'package:token_app/size_config.dart';
 
@@ -24,9 +24,11 @@ class Body extends StatelessWidget {
                   "Complete your details",
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(height: SizeConfig.screenHeight * 0.04),
+                SizedBox(height: SizeConfig.screenHeight * 0.02),
                 SignUpForm(),
-                SizedBox(height: SizeConfig.screenHeight * 0.04),
+                SizedBox(height: SizeConfig.screenHeight * 0.02),
+
+                HaveAccountText(),
                 /* Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -44,7 +46,7 @@ class Body extends StatelessWidget {
                     ),
                   ],
                 ),*/
-                SizedBox(height: getProportionateScreenHeight(20)),
+                SizedBox(height: getProportionateScreenHeight(10)),
                 Text(
                   'By continuing your confirm that you agree \nwith our Terms and Conditions',
                   textAlign: TextAlign.center,

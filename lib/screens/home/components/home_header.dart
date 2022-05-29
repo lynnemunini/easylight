@@ -26,14 +26,14 @@ class HomeHeader extends StatelessWidget {
             onPressed: () =>
                 Navigator.pushNamed(context, ProfileScreen.routeName),
           ),
-          Text(
+          /*Text(
             "Hello, Lynne",
             textAlign: TextAlign.center,
             style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 //color: kPrimaryColor,
                 fontSize: 16),
-          ),
+          ),*/
           IconButton(
             icon: SvgPicture.asset(
               "assets/icons/User Icon.svg",
