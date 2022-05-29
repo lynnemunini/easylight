@@ -8,6 +8,7 @@ class transaction_card extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<String> amount = <String>['Amt Ksh: 100.00', 'Amt Ksh: 500.00'];
     final List<String> units = <String>["Units: 6.27", "Units: 29.75"];
+    final List<String> meter_number = <String>["123456789", "0000000000"];
 
     return ListView.separated(
       shrinkWrap: true,
@@ -29,9 +30,11 @@ class transaction_card extends StatelessWidget {
                 title: Text("${amount[index]}\n",
                     style: TextStyle(color: Colors.black, fontSize: 16)),
                 subtitle: Text(
-                  "${units[index]}",
+                  "Meter Number: ${meter_number[index]}",
                   style: TextStyle(color: kSecondaryColor),
                 ),
+                trailing: Text("${units[index]}",
+                    style: TextStyle(color: Color(0xFF125B50), fontSize: 13)),
               ),
             ],
           ),
