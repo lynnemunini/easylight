@@ -42,9 +42,9 @@ class _SignUpFormState extends State<SignUpForm> {
         children: [
           buildPhoneNumberFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
-          buildMeterNumberFormField(),
-          SizedBox(height: getProportionateScreenHeight(30)),
           buildEmailFormField(),
+          SizedBox(height: getProportionateScreenHeight(30)),
+          buildMeterNumberFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
           buildPasswordFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
