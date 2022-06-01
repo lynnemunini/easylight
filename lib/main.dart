@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:token_app/routes.dart';
 import 'screens/splash/splash_screen.dart';
 import 'package:token_app/theme.dart';
-import 'package:sqflite/sqflite.dart';
 
 void main() {
   runApp(MyApp());
