@@ -9,11 +9,9 @@ The application allows users to purchase prepaid tokens and get notified via SMS
 
 ### Sample Images
 <img src="assets/images/sample5.png" height= "50%" width= "50%" alt="Sample Images">
-<img src="assets/images/sample6.png" height= "20%" width= "20%" alt="Sample Images">
-<img src="assets/images/sample7.png" height= "20%" width= "20%" alt="Sample Images">
-<br>
-<img src="assets/images/sample1.png" height= "20%" width= "20%" alt="Sample Images">
-<img src="assets/images/sample2.png" height= "20%" width= "20%" alt="Sample Images">
-<img src="assets/images/sample3.png" height= "20%" width= "20%" alt="Sample Images">
-<br>
-<img src="assets/images/sample4.png" height= "20%" width= "20%" alt="Sample Images">
+<img src="assets/images/sample6.png" height= "50%" width= "50%" alt="Sample Images">
+<img src="assets/images/sample7.png" height= "50%" width= "50%" alt="Sample Images">
+<img src="assets/images/sample1.png" height= "50%" width= "50%" alt="Sample Images">
+<img src="assets/images/sample2.png" height= "50%" width= "50%" alt="Sample Images">
+<img src="assets/images/sample3.png" height= "50%" width= "50%" alt="Sample Images">
+<img src="assets/images/sample4.png" height= "50%" width= "50%" alt="Sample Images">
