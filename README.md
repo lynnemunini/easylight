@@ -8,7 +8,7 @@ The application allows users to purchase prepaid tokens and get notified via SMS
 - Get notified via SMS when the tokens are about to deplete
 
 ### Sample Images
-<img src="assets/images/sample5.png" height= "20%" width= "20%" alt="Sample Images">
+<img src="assets/images/sample5.png" height= "50%" width= "50%" alt="Sample Images">
 <img src="assets/images/sample6.png" height= "20%" width= "20%" alt="Sample Images">
 <img src="assets/images/sample7.png" height= "20%" width= "20%" alt="Sample Images">
 <br>
