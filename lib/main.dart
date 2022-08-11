@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:token_app/routes.dart';
 import 'screens/splash/splash_screen.dart';
 import 'package:token_app/theme.dart';
+import 'package:mpesa_flutter_plugin/mpesa_flutter_plugin.dart';
 
 void main() {
+  MpesaFlutterPlugin.setConsumerKey("VEQ8Bzo1yPL412E6JoSDvgMEUMnzt5o5");
+  MpesaFlutterPlugin.setConsumerSecret("2GdkrWFlApzhqa8F");
+
   runApp(MyApp());
 }
 
