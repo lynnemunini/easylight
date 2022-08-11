@@ -5,6 +5,7 @@ import 'package:token_app/screens/profile/profile_screen.dart';
 import 'package:token_app/screens/sign_in/sign_in_screen.dart';
 import 'package:token_app/screens/splash/splash_screen.dart';
 import 'screens/sign_up/sign_up_screen.dart';
+import 'screens/top_amount/top_screen.dart';
 
 // All routes are available here
 final Map<String, WidgetBuilder> routes = {
@@ -13,5 +14,6 @@ final Map<String, WidgetBuilder> routes = {
   SignUpScreen.routeName: (context) => SignUpScreen(),
   HomeScreen.routeName: (context) => HomeScreen(),
   ProfileScreen.routeName: (context) => ProfileScreen(),
-  SplashScreen.routeName: (context) => SplashScreen()
+  SplashScreen.routeName: (context) => SplashScreen(),
+  TopUpScreen.routeName: (context) => TopUpScreen()
 };
