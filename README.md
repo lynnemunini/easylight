@@ -8,10 +8,10 @@ The application allows users to purchase prepaid tokens and get notified via SMS
 - Get notified via SMS when the tokens are about to deplete
 
 ### Sample Images
-<img src="assets/images/sample5.png" height= "40%" width= "40%" alt="Sample Images">
-<img src="assets/images/sample6.png" height= "40%" width= "40%" alt="Sample Images">
-<img src="assets/images/sample7.png" height= "40%" width= "40%" alt="Sample Images">
-<img src="assets/images/sample1.png" height= "40%" width= "40%" alt="Sample Images">
-<img src="assets/images/sample2.png" height= "40%" width= "40%" alt="Sample Images">
-<img src="assets/images/sample3.png" height= "40%" width= "40%" alt="Sample Images">
-<img src="assets/images/sample4.png" height= "40%" width= "40%" alt="Sample Images">
+<img src="assets/images/sample5.png" height= "45%" width= "45%" alt="Sample Images">
+<img src="assets/images/sample6.png" height= "45%" width= "45%" alt="Sample Images">
+<img src="assets/images/sample7.png" height= "45%" width= "45%" alt="Sample Images">
+<img src="assets/images/sample1.png" height= "45%" width= "45%" alt="Sample Images">
+<img src="assets/images/sample2.png" height= "45%" width= "45%" alt="Sample Images">
+<img src="assets/images/sample3.png" height= "45%" width= "45%" alt="Sample Images">
+<img src="assets/images/sample4.png" height= "45%" width= "45%" alt="Sample Images">
