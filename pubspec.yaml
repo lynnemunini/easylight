@@ -30,8 +30,8 @@ dependencies:
   # if you are using latest flutter please update your flutter_svg package to ^0.18.*
   flutter_svg: ^1.1.3 # help us to use SVG in our app
   provider: ^6.0.0 # for State management
-  mpesa_flutter_plugin: ^1.0.0
-  path: ^1.8.0
+  mpesa_flutter_plugin: ^1.0.0 # for mpesa integration
+  path: ^1.8.0 # for path finding
 
 dev_dependencies:
   flutter_test:

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-//import 'package:token_app/screens/profile/profile_screen.dart';
+import 'package:token_app/screens/home/home_screen.dart';
 import 'package:token_app/screens/home/components/icon_btn_with_counter.dart';
 //import '../size_config.dart';
 
@@ -45,14 +45,14 @@ class CustomBottomNavBar extends StatelessWidget {
                   color: kPrimaryColor,
                 ),
                 onPressed: () {
-                  //Navigator.pushNamed(context, ProfileScreen.routeName);
+                  Navigator.pushNamed(context, HomeScreen.routeName);
                 },
               ),
               IconBtnWithCounter(
                 svgSrc: "assets/icons/Bell.svg",
-                numOfitem: 4,
+                numOfitem: 1,
                 press: () {
-                  //Navigator.pushNamed(context, ProfileScreen.routeName);
+                  Navigator.pushNamed(context, HomeScreen.routeName);
                 },
                 selectedMenu: selectedMenu,
               ),
@@ -64,7 +64,7 @@ class CustomBottomNavBar extends StatelessWidget {
                       : inActiveIconColor,
                 ),
                 onPressed: () {
-                  //Navigator.pushNamed(context, ProfileScreen.routeName);
+                  Navigator.pushNamed(context, HomeScreen.routeName);
                 },
               ),
             ],
