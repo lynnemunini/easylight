@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:token_app/components/custom_surfix_icon.dart';
 import 'package:token_app/components/default_button.dart';
 import 'package:token_app/components/form_error.dart';
-import 'package:token_app/screens/home/home_screen.dart';
+//import 'package:token_app/screens/home/home_screen.dart';
+import 'package:token_app/service/http_service.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';
@@ -14,7 +15,9 @@ class SignUpForm extends StatefulWidget {
 
 class _SignUpFormState extends State<SignUpForm> {
   final _formKey = GlobalKey<FormState>();
+  String? phoneNumber;
   String? email;
+  String? meterNumber;
   String? password;
   String? confirm_password;
   bool remember = false;
@@ -53,11 +56,19 @@ class _SignUpFormState extends State<SignUpForm> {
           SizedBox(height: getProportionateScreenHeight(30)),
           DefaultButton(
             text: "Register",
-            press: () {
+            press: () async {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
-                // if all are valid then go to success screen
-                Navigator.pushNamed(context, HomeScreen.routeName);
+                // if all are valid then do the registration
+                print("phoneNumber: $phoneNumber");
+                print("email: $email");
+                print("meterNumber: $meterNumber");
+                print("password: $password");
+                print("confirm_password: $confirm_password");
+                await HttpService.register(
+                    phoneNumber, email, meterNumber, password, context);
+
+                //Navigator.pushNamed(context, HomeScreen.routeName);
               }
             },
           ),
@@ -107,7 +118,9 @@ class _SignUpFormState extends State<SignUpForm> {
         } else if (value.length >= 8) {
           removeError(error: kShortPassError);
         }
-        password = value;
+        setState(() {
+          password = value;
+        });
       },
       validator: (value) {
         if (value!.isEmpty) {
@@ -117,6 +130,9 @@ class _SignUpFormState extends State<SignUpForm> {
           addError(error: kShortPassError);
           return "";
         }
+        setState(() {
+          password = value;
+        });
         return null;
       },
       decoration: InputDecoration(
@@ -138,7 +154,9 @@ class _SignUpFormState extends State<SignUpForm> {
         } else if (emailValidatorRegExp.hasMatch(value)) {
           removeError(error: kInvalidEmailError);
         }
-        return null;
+        setState(() {
+          email = value;
+        });
       },
       validator: (value) {
         if (value!.isEmpty) {
@@ -148,6 +166,9 @@ class _SignUpFormState extends State<SignUpForm> {
           addError(error: kInvalidEmailError);
           return "";
         }
+        setState(() {
+          email = value;
+        });
         return null;
       },
       decoration: InputDecoration(
@@ -160,10 +181,15 @@ class _SignUpFormState extends State<SignUpForm> {
   }
 
   TextFormField buildPhoneNumberFormField() {
-    String? phoneNumber;
     return TextFormField(
       keyboardType: TextInputType.phone,
-      onSaved: (String) => phoneNumber = phoneNumber,
+      onSaved: (newValue) => phoneNumber = newValue,
+      onChanged: (value) {
+        setState(() {
+          phoneNumber = value;
+        });
+        return null;
+      },
       decoration: InputDecoration(
         labelText: "Phone Number",
         hintText: "Enter your phone number",
@@ -174,10 +200,15 @@ class _SignUpFormState extends State<SignUpForm> {
   }
 
   TextFormField buildMeterNumberFormField() {
-    String? meterNumber;
     return TextFormField(
       keyboardType: TextInputType.phone,
-      onSaved: (String) => meterNumber = meterNumber,
+      onSaved: (newValue) => meterNumber = newValue,
+      onChanged: (value) {
+        setState(() {
+          meterNumber = value;
+        });
+        return null;
+      },
       decoration: InputDecoration(
         labelText: "Meter Number",
         hintText: "Enter your meter number",

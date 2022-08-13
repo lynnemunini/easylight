@@ -3,6 +3,7 @@ import 'package:token_app/routes.dart';
 import 'screens/splash/splash_screen.dart';
 import 'package:token_app/theme.dart';
 import 'package:mpesa_flutter_plugin/mpesa_flutter_plugin.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 
 void main() {
   MpesaFlutterPlugin.setConsumerKey("VEQ8Bzo1yPL412E6JoSDvgMEUMnzt5o5");
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
       // We use routeName so that we dont need to remember the name
       initialRoute: SplashScreen.routeName,
       routes: routes,
+      builder: EasyLoading.init(),
     );
   }
 }
