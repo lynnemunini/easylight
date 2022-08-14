@@ -29,7 +29,7 @@ class Services extends StatelessWidget {
               if (index == 0) {
                 Navigator.pushNamed(context, AccountsScreen.routeName);
               } else if (index == 1) {
-                Navigator.pushNamed(context, '/services');
+                Navigator.pushNamed(context, ServicesScreen.routeName);
               } else if (index == 2) {
                 Navigator.pushNamed(context, '/help');
               }

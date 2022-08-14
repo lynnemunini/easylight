@@ -8,7 +8,7 @@ class Help extends StatelessWidget {
       "We are here to help you with any questions you may have.\n\n"
       "If you have any questions, please feel free to contact us at:\n\n"
       "Email: muninilynne65@gmail.com\n\n"
-      "Phone: +234-803-898-9087\n\n"
+      "Phone: +254712345678\n\n"
       "We will be happy to help you.\n\n\n";
   final String buttonText = "Contact Us";
   final String buttonRoute = "/profile";
