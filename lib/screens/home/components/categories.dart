@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:token_app/screens/top_amount/top_screen.dart';
 import 'package:token_app/screens/monitor/mon_screen.dart';
+import 'package:token_app/screens/statement/statement_screen.dart';
 
 import '../../../size_config.dart';
 import '../../../constants.dart';
@@ -71,7 +72,7 @@ class Categories extends StatelessWidget {
               } else if (categories[index]["text"] == "Usage") {
                 Navigator.pushNamed(context, MonitorScreen.routeName);
               } else if (categories[index]["text"] == "Statement") {
-                Navigator.pushNamed(context, TopUpScreen.routeName);
+                Navigator.pushNamed(context, StatementScreen.routeName);
               }
             },
           ),

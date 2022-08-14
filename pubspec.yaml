@@ -35,6 +35,8 @@ dependencies:
   flutter_easyloading: ^3.0.5
   http: ^0.13.5
   fl_chart: ^0.45.1
+  crypto_font_icons: ^0.1.0+1 
+  typicons_flutter: ^0.2.1
 
 dev_dependencies:
   flutter_test:
