@@ -3,8 +3,8 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 //import 'package:flutter/cupertino.dart';
-import 'package:token_app/screens/sign_in/components/sign_form.dart';
-import 'package:token_app/screens/sign_up/components/sign_up_form.dart';
+//import 'package:token_app/screens/sign_in/components/sign_form.dart';
+//import 'package:token_app/screens/sign_up/components/sign_up_form.dart';
 import 'package:http/http.dart' as http;
 import 'package:token_app/screens/home/home_screen.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
