@@ -23,7 +23,15 @@ class Services extends StatelessWidget {
           (index) => ServiceCard(
             icon: services[index]["icon"],
             text: services[index]["text"],
-            press: () {},
+            press: () {
+              if (index == 0) {
+                Navigator.pushNamed(context, '/accounts');
+              } else if (index == 1) {
+                Navigator.pushNamed(context, '/services');
+              } else if (index == 2) {
+                Navigator.pushNamed(context, '/help');
+              }
+            },
           ),
         ),
       ),
