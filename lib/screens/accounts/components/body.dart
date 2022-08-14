@@ -1,33 +1,15 @@
 import 'package:flutter/material.dart';
 import '../../../constants.dart';
 
-class Statement extends StatelessWidget {
-  const Statement({Key? key}) : super(key: key);
+class Accounts extends StatelessWidget {
+  const Accounts({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final List<String> amount = <String>[
-      'Amt Ksh: 100.00',
-      'Amt Ksh: 500.00',
-      'Amt Ksh: 50.00',
-      'Amt Ksh: 200.00',
-      'Amt Ksh: 100.00',
-      'Amt Ksh: 200.00',
-    ];
-    final List<String> units = <String>[
-      "Units: 6.27",
-      "Units: 29.75",
-      "Units: 3.50",
-      "Units: 12.00",
-      "Units: 6.75",
-      "Units: 12.75",
+      'muninilynne65@gmail.com',
     ];
     final List<String> meter_number = <String>[
-      "123456789",
-      "123456789",
-      "123456789",
-      "123456789",
-      "123456789",
       "123456789",
     ];
 
@@ -47,15 +29,39 @@ class Statement extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               ListTile(
-                leading: Image.asset("assets/icons/payment.png"),
+                leading: Icon(Icons.person, color: kPrimaryColor),
                 title: Text("${amount[index]}\n",
                     style: TextStyle(color: Colors.black, fontSize: 16)),
                 subtitle: Text(
                   "Meter Number: ${meter_number[index]}",
                   style: TextStyle(color: kSecondaryColor),
                 ),
-                trailing: Text("${units[index]}",
-                    style: TextStyle(color: Color(0xFF125B50), fontSize: 13)),
+                onLongPress: () {
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        title: Text("Delete Account"),
+                        content: Text(
+                            "Are you sure you want to delete this account?"),
+                        actions: <Widget>[
+                          TextButton(
+                            child: Text("Cancel"),
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                          ),
+                          TextButton(
+                            child: Text("Delete"),
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                          ),
+                        ],
+                      );
+                    },
+                  );
+                },
               ),
             ],
           ),

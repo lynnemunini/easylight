@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
 import '../../../constants.dart';
+import 'package:token_app/screens/accounts/accounts_screen.dart';
+import 'package:token_app/screens/services/services_screen.dart';
 
 class Services extends StatelessWidget {
   @override
@@ -25,7 +27,7 @@ class Services extends StatelessWidget {
             text: services[index]["text"],
             press: () {
               if (index == 0) {
-                Navigator.pushNamed(context, '/accounts');
+                Navigator.pushNamed(context, AccountsScreen.routeName);
               } else if (index == 1) {
                 Navigator.pushNamed(context, '/services');
               } else if (index == 2) {

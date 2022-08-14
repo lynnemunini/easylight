@@ -8,6 +8,8 @@ import 'screens/monitor/mon_screen.dart';
 import 'screens/sign_up/sign_up_screen.dart';
 import 'screens/top_amount/top_screen.dart';
 import 'screens/statement/statement_screen.dart';
+import 'screens/accounts/accounts_screen.dart';
+import 'screens/services/services_screen.dart';
 
 // All routes are available here
 final Map<String, WidgetBuilder> routes = {
@@ -19,5 +21,7 @@ final Map<String, WidgetBuilder> routes = {
   SplashScreen.routeName: (context) => SplashScreen(),
   TopUpScreen.routeName: (context) => TopUpScreen(),
   MonitorScreen.routeName: (context) => MonitorScreen(),
-  StatementScreen.routeName: (context) => StatementScreen()
+  StatementScreen.routeName: (context) => StatementScreen(),
+  AccountsScreen.routeName: (context) => AccountsScreen(),
+  ServicesScreen.routeName: (context) => ServicesScreen()
 };
