@@ -10,6 +10,7 @@ import 'screens/top_amount/top_screen.dart';
 import 'screens/statement/statement_screen.dart';
 import 'screens/accounts/accounts_screen.dart';
 import 'screens/services/services_screen.dart';
+import 'screens/help/help_screen.dart';
 
 // All routes are available here
 final Map<String, WidgetBuilder> routes = {
@@ -23,5 +24,6 @@ final Map<String, WidgetBuilder> routes = {
   MonitorScreen.routeName: (context) => MonitorScreen(),
   StatementScreen.routeName: (context) => StatementScreen(),
   AccountsScreen.routeName: (context) => AccountsScreen(),
-  ServicesScreen.routeName: (context) => ServicesScreen()
+  ServicesScreen.routeName: (context) => ServicesScreen(),
+  HelpScreen.routeName: (context) => HelpScreen(),
 };
