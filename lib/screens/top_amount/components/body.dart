@@ -22,7 +22,7 @@ class Body extends StatelessWidget {
                   path: "/10tpvzc1"),
               //This url has been generated from http://mpesa-requestbin.herokuapp.com/?ref=hackernoon.com for test purposes
               accountReference: "EasyLight",
-              phoneNumber: "254790901668",
+              phoneNumber: "254723299814",
               baseUri: Uri(scheme: "https", host: "sandbox.safaricom.co.ke"),
               transactionDesc: "purchase",
               passKey:
